@@ -4,7 +4,7 @@ import logo from "../assets/logo.svg";
 import styles from './stylescomponent.css'
 const Navbar = () => {
   const descargarCV = () => {
-    const rutaCV = '/VD.pdf';
+    const rutaCV = '/portafolioweb/VD.pdf';
     const enlace = document.createElement('a');
     enlace.href = rutaCV;
     enlace.download = 'cv_Juan_Montero.pdf';
