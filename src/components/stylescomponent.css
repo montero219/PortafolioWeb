@@ -1,0 +1,136 @@
+.container-navbar{
+    width: 90%;
+}
+.navbar-align{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;}
+.items-navbar-style{
+    display:flex;
+    gap:15px;
+    height: 100%;
+    align-items: center;
+}
+.items-navbar-style a{
+    text-decoration: none;
+    font-size: 14px;
+    cursor:pointer;
+    color: white;
+}
+.CV{
+    text-decoration: none;
+    font-size: 14px;
+    cursor:pointer;
+    color: white;
+    border: solid 2px  #34baab;
+    border-radius: 5px;
+    width: 120px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CV:hover{
+    border: solid 3px  #34baab;
+    background-color: white;
+    color: #34baab;
+    font-weight: 700;
+}
+.items-navbar-style a:hover{
+    color:#c4c8c5;
+}
+.container-logo{
+    display: flex;
+}
+.container-logo img{
+    width: 150px;
+    height: 100px;
+}
+.container-presentation-text{
+    width: 50%;
+    position: fixed;
+    bottom: 0;
+    left: 47%;
+    transform: translateX(-50%);
+    top: 35%;
+    height: 35%;
+}
+
+.container-presentation-text h4{
+    font-size: 18px;
+    color: #9bf4f4;
+    font-weight: 100;
+    margin: 0px;
+}
+
+.container-presentation-text h1{
+    font-size: 58px;
+    margin: 0px;
+    color:#e6fcfc
+}
+.container-presentation-text h3{
+    font-size: 58px;
+    margin: 0px;
+    color:#b4f7f7
+}
+
+@media (max-width: 1750px) {
+    .container-presentation-text h4 , .description span{
+        font-size: 11px;
+    }
+    .container-presentation-text h1 ,.container-presentation-text h3 {
+        font-size: 45px;
+    }
+}
+
+@keyframes parpadeo {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .cursor {
+    display: inline-block;
+    font-size: 17px;
+    color: inherit; /* Cambia el color según tus necesidades */
+    animation: parpadeo 1s infinite;
+    margin:0px; 
+  }
+
+  .description{
+    display: flex;
+    margin-top: 15px;
+    width: 60%;
+}
+.description span {
+    font-size: 18px;
+    color:#e6fcfc;
+}
+.colombia{
+    background: linear-gradient(to right, yellow 9.33%, yellow 14.66%, #0033A0 55.66%, #0033A0 16%, #FF0000 85%) !important;
+    -webkit-background-clip: text !important; 
+    font-weight: bold !important; /* Puedes ajustar el peso de la fuente si es necesario */
+    color: transparent !important;
+}
+.linterna {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 80%);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    
+}
+.instagram, .linkedin, .github{
+    color:white
+}
+.instagram:hover, .linkedin:hover, .github:hover{
+    color: #34baab;
+    cursor: pointer;
+}
+
