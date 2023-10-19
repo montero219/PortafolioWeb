@@ -9,7 +9,7 @@ import style from "./App.css"
 function PortafolioWeb() {
   return (
     <>
-      <Linterna />
+      <Linterna/>
       <section className="container">
         <Navbar/>
       </section>

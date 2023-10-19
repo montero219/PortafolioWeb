@@ -1,5 +1,7 @@
 import React from 'react';
 import logo from "../assets/logo.svg";
+import { FaGripLines, } from "react-icons/fa";
+
 // eslint-disable-next-line no-unused-vars
 import styles from './stylescomponent.css'
 const Navbar = () => {
@@ -23,7 +25,13 @@ const Navbar = () => {
           <a href="#contacto">Contacto</a>
           <div className='CV' onClick={descargarCV} >Descargar VD</div>
         </div>
+        <div className='menu'>
+          <FaGripLines className='icono-menu'/>
+        </div>
       </section>
+      {/* <section  className='menu'>
+
+      </section> */}
     </div>
   );
 }

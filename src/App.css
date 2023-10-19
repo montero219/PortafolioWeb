@@ -44,5 +44,18 @@ html{
     display: flex;
     flex-direction: column;
 }
-
-
+@media (max-width: 955px) {
+    .iconos{
+        justify-content: center;
+        gap: 40px;
+        font-size: 27px;
+        color: white;
+        position: fixed;
+        bottom: 0;
+        top: 75%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        left:50%;
+    }
+}
