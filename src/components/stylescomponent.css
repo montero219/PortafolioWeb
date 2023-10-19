@@ -190,8 +190,14 @@ width: 100%;}
         position: relative;
         left: 10%;
     }
+    .linterna{
+        display: none;
+    }
 }
 @media (max-width: 498px) {
+    .linterna{
+        display: none;
+    }
     .container-presentation-text {
         width: 83%;
         position: fixed;
