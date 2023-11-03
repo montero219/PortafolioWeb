@@ -7,7 +7,7 @@ const Navbar = () => {
     const rutaCV = 'VD.pdf';
     const enlace = document.createElement('a');
     enlace.href = rutaCV;
-    enlace.download = 'cv_Juan_Montero.pdf';
+    enlace.download = `cv_Juan_Montero.pdf_${new Date()}`;
     enlace.click();
   };
   return (
