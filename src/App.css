@@ -1,6 +1,6 @@
 html{
     font-family: 'Roboto Mono', monospace;
-    background-color: #0f003c;
+    background-color:rgb(6, 36, 70);
     width: 100%;
     overflow: hidden;
 }
@@ -30,32 +30,15 @@ html{
     align-items: center;
 
 }
-.iconos{
-    justify-content: center;
-    gap: 40px;
-    font-size: 38px;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    left: 96%;
-    transform: translateX(-50%);
-    top: 79%;
-    height: 50px;
-    display: flex;
-    flex-direction: column;
+
+.Contenedor{
+    height: 100vh;
+    margin: 0px 250px 0px 250px;
+    position: relative;
 }
-@media (max-width: 955px) {
-    .iconos{
-        justify-content: center;
-        gap: 40px;
-        font-size: 27px;
-        color: white;
-        position: fixed;
-        bottom: 0;
-        top: 75%;
-        height: 50px;
-        display: flex;
-        flex-direction: row;
-        left:50%;
+@media (max-width: 1750px) {
+    .Contenedor{
+        height: 96vh;
     }
 }
+
