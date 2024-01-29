@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
+// import { Link } from 'react-scroll';
+
 // import logo from "../assets/logo.svg";
 // eslint-disable-next-line no-unused-vars
 import styles from './stylescomponent.css'
 const Navbar = () => {
+  const [seccionActiva, setSeccionActiva] = useState('inicio');
+
+  
+  const cambiarSeccion = (seccion) => {
+    setSeccionActiva(seccion);
+  };
+  
   const descargarCV = () => {
     const rutaCV = 'VD.pdf';
     const enlace = document.createElement('a');
@@ -12,17 +21,14 @@ const Navbar = () => {
   };
   return (
     <div className='container-navbar'>
-      <section className='navbar-align'>
-        {/* <div className='container-logo'>
-          <img src={logo} alt="Logo" />
-        </div> */}
-        <div className='items-navbar-style'>
-          <a href="#inicio">Inicio</a>
-          <a href="#habilidades">Habilidades</a>
-          <a href="#sobreMi">Sobre mi</a>
-          <a href="#contacto">Contacto</a>
-          <div className='CV' onClick={descargarCV} >Descargar VD</div>
-        </div>
+      <section className='navbar-align' >
+      <div className='items-navbar-style'>
+        <a href="#inicio" className={seccionActiva === 'inicio' ? 'inicio' : ''} onClick={() => cambiarSeccion('inicio')}>Inicio</a>
+        <a href="#experiencia" className={seccionActiva === 'experiencia' ? 'experiencia' : ''} onClick={() => cambiarSeccion('experiencia')}>Experiencia</a>
+        <a href="#sobreMi" className={seccionActiva === 'sobreMi' ? 'sobreMi' : ''} onClick={() => cambiarSeccion('sobreMi')}>Sobre mi</a>
+        <a href="#contacto" className={seccionActiva === 'contacto' ? 'contacto' : ''} onClick={() => cambiarSeccion('contacto')}>Contacto</a>
+      </div>
+        <div className='CV' onClick={descargarCV} >Descargar VD</div>
       </section>
     </div>
   );
