@@ -198,7 +198,13 @@ height: 80px;
     #sobreMi{
      height: auto !important;
     }
-
+    .ico-nav{
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+    .CV{
+        position: unset !important;
+    }
 }
 .title-byme{
     display: block;

@@ -5,6 +5,8 @@ import React, { useState } from 'react';
 // eslint-disable-next-line no-unused-vars
 import styles from './stylescomponent.css'
 import { FaBars } from "react-icons/fa6";
+import { IoMdDownload } from "react-icons/io";
+
 
 const Navbar = () => {
   const [seccionActiva, setSeccionActiva] = useState('inicio');
@@ -35,6 +37,7 @@ const Navbar = () => {
       </section>
       <section className='ico-nav'>
         <FaBars/>
+        <div className='CV' style={{height:'25px', display:'flex', gap:'5px', fontSize:'12px', width:'50px'}} onClick={descargarCV} > <IoMdDownload /> VD</div>
       </section>
     </div>
   );
