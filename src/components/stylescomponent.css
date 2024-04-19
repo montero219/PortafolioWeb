@@ -179,6 +179,7 @@ height: 80px;
     }
     .container-text-byme{
         width: 100% !important;
+        height: 100% !important;
     }
     .container-text-byme h1{
         height: auto !important;
