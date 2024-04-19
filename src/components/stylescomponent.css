@@ -155,8 +155,7 @@ height: 80px;
 
     #experiencia{
         display: block !important;
-        overflow-y: auto !important;
-
+        height: auto !important;
     }
     .ContainerIconsHabilidades{
         width: 100% !important;
