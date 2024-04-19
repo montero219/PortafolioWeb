@@ -20,7 +20,9 @@ import me from '../assets/me.gif'
     return (
         <>
             <section className="containerSobremi">
-            <h1 className={isMobile&&'title-byme'}>Sobre Mi</h1>
+            { isMobile &&
+                        <h1 className={'title-byme'}>Sobre Mi</h1>
+            }
                 <div className="containerDescriptionsobremi">
                   <div  className="img-container-byme" style={{display: 'flex', height: '550px', border:'1px solid white' , padding:'20px', borderRadius:'16%'}}>
                   <img className={isMobile ?  'img-mobile' : 'img-desktop'}
