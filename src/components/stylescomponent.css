@@ -167,9 +167,16 @@ height: 80px;
     .container-presentation-text{
 
         width: 100% !important;
+        top:40% !important
+    }
+    .iconos{
+        bottom:150px !important;
     }
     .container-text-byme{
         width: 100% !important;
+    }
+    .container-text-byme h1{
+        height: auto !important;
     }
     .containerSobremi{
         width: 100% !important;
