@@ -125,7 +125,12 @@ height: 80px;
 .container-exp-mobile{
     display: none;
 }
+.container-text-byme{
+    height: 473px;
+    width: 610px;
+    display: grid;
 
+}
 @media(max-width:800px){
     .navbar-align{
         display: none;
@@ -155,7 +160,23 @@ height: 80px;
         width: 100% !important;
         overflow-y: auto !important;
     }
-    
+
+    .img-container-byme{
+        display: none !important;
+    }
+    .container-presentation-text{
+
+        width: 100% !important;
+    }
+    .container-text-byme{
+        width: 100% !important;
+    }
+    .containerSobremi{
+        width: 100% !important;
+    }
+    .containerDescriptionsobremi {
+        padding: 10px !important;
+    }
 }
 
   .cursor {
