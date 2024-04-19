@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 // import logo from "../assets/logo.svg";
 // eslint-disable-next-line no-unused-vars
 import styles from './stylescomponent.css'
+import { FaBars } from "react-icons/fa6";
+
 const Navbar = () => {
   const [seccionActiva, setSeccionActiva] = useState('inicio');
 
@@ -26,9 +28,13 @@ const Navbar = () => {
         <a href="#inicio" className={seccionActiva === 'inicio' ? 'inicio' : ''} onClick={() => cambiarSeccion('inicio')}>Inicio</a>
         <a href="#experiencia" className={seccionActiva === 'experiencia' ? 'experiencia' : ''} onClick={() => cambiarSeccion('experiencia')}>Experiencia</a>
         <a href="#sobreMi" className={seccionActiva === 'sobreMi' ? 'sobreMi' : ''} onClick={() => cambiarSeccion('sobreMi')}>Sobre mi</a>
-        <a href="#contacto" className={seccionActiva === 'contacto' ? 'contacto' : ''} onClick={() => cambiarSeccion('contacto')}>Contacto</a>
+        <a href="#Contactme" className={seccionActiva === 'Contactme' ? 'Contactme' : ''} onClick={() => cambiarSeccion('Contactme')}>Contacto</a>
+
       </div>
         <div className='CV' onClick={descargarCV} >Descargar VD</div>
+      </section>
+      <section className='ico-nav'>
+        <FaBars/>
       </section>
     </div>
   );

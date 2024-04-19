@@ -1,8 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 // import { FaReact } from "react-icons/fa";
 import CardsHabilidades from './CardsHabilidades';
  const Habilidades = () => {
 
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        function handleResize() {
+            setIsMobile(window.innerWidth < 800);
+        }
+
+        window.addEventListener('resize', handleResize);
+        handleResize(); // Verificar el tamaño de la pantalla al cargar la página
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     let Habilidad1 = {
         Rango : 'Mar 2023 - Actualidad',
         Empresa : 'Movisoftware | Desarrollador Front-end',
@@ -46,8 +60,11 @@ import CardsHabilidades from './CardsHabilidades';
         <h2 style={{width:'300px'}}>Construyo aplicativos web estéticos, intuitivos y para todo público.</h2>
         </div>
     </section>
+    <section className='container-exp-mobile'>
+        <h1>Experiencia</h1>
+    </section>
     <section className='ContainerIconsHabilidades'>
-        <div className='cardHabilidad'> 
+    <div className={isMobile ? '' : 'cardHabilidad'}>
             <div className='SectionHabilidades'>
                <CardsHabilidades Rango={Habilidad1.Rango} Empresa={Habilidad1.Empresa} Cargo={Habilidad1.Cargo} Nivel={Habilidad1.Nivel}  Descripcion={Habilidad1.Descripcion} Habilidades={Habilidad1.Habilidades} />
                <CardsHabilidades Rango={Habilidad2.Rango} Empresa={Habilidad2.Empresa} Cargo={Habilidad2.Cargo} Nivel={Habilidad2.Nivel}  Descripcion={Habilidad2.Descripcion} Habilidades={Habilidad2.Habilidades} />

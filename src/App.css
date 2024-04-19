@@ -63,5 +63,13 @@ body{
 }
 
 
+@media(max-width:800px){
+    .containerTotal{
+        overflow-y: auto;
+    }
+}
+
+
+
 
 
