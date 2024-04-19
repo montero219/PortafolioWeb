@@ -109,7 +109,7 @@ height: 80px;
     color:white;
 }
 .container-presentation-text h3{
-    font-size: clamp(20px, 4vw, 40px);
+    font-size: clamp(30px, 4vw, 40px);
     margin: 0px;
     color:#ffab03;
 }
@@ -155,10 +155,11 @@ height: 80px;
 
     #experiencia{
         display: block !important;
+        overflow-y: auto !important;
+
     }
     .ContainerIconsHabilidades{
         width: 100% !important;
-        overflow-y: auto !important;
     }
 
     .img-container-byme{
