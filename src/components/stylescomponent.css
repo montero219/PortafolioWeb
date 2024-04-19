@@ -156,6 +156,7 @@ height: 80px;
     #experiencia{
         display: block !important;
         height: auto !important;
+        padding-right: 10px !important  ;
     }
     .ContainerIconsHabilidades{
         width: 100% !important;
@@ -410,7 +411,7 @@ height: 80px;
 }
 .containerDescriptionsobremi  h1{
     color: white;
-    font-size: 45px;
+    font-size: clamp(25px, 4vw, 40px);
     margin: 0;
     margin-bottom: 10px;
 
