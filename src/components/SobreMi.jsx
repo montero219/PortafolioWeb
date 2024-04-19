@@ -1,15 +1,29 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import me from '../assets/me.gif'
 
-
-
  const Sobremi = () => {
+
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        function handleResize() {
+            setIsMobile(window.innerWidth < 800);
+        }
+
+        window.addEventListener('resize', handleResize);
+        handleResize(); // Verificar el tamaño de la pantalla al cargar la página
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     return (
         <>
             <section className="containerSobremi">
+            <h1 className={isMobile&&'title-byme'}>Sobre Mi</h1>
                 <div className="containerDescriptionsobremi">
                   <div  className="img-container-byme" style={{display: 'flex', height: '550px', border:'1px solid white' , padding:'20px', borderRadius:'16%'}}>
-                  <img style={{borderRadius:'15%' , background:'rgb(255, 171, 3)'}}
+                  <img className={isMobile ?  'img-mobile' : 'img-desktop'}
                         src={me}
                         alt={"me from me"}
                         />

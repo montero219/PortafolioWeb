@@ -163,7 +163,11 @@ height: 80px;
     }
 
     .img-container-byme{
-        display: none !important;
+        /* display: none !important; */
+        border-radius: unset !important;
+        border: none !important;
+        justify-content: center !important;
+        height: auto !important;
     }
     .container-presentation-text{
 
@@ -187,7 +191,28 @@ height: 80px;
         padding: 10px !important;
         top: unset !important;
         transform: unset !important;
+        display: block !important;
     }
+
+}
+.title-byme{
+    display: block;
+    font-size: 30px;
+    color: orange;
+    margin:0;
+    margin-left: 10px;
+}
+.img-mobile{
+    border-radius: 15%;
+    background: rgb(255, 171, 3);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.img-desktop{
+    border-radius: 15%;
+    background: rgb(255, 171, 3);
 }
 
   .cursor {

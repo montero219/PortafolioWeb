@@ -24,9 +24,9 @@ function PortafolioWeb() {
       <section id="sobreMi">
       <Sobremi/>
       </section>
-      <section id="contacme">
+      {/* <section id="contacme">
       <Contactme/>
-      </section>
+      </section> */}
     </section>
   );
 }
