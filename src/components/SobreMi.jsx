@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import me from '../assets/me.gif'
+import me from '../assets/me.png'
 
  const Sobremi = () => {
 
@@ -24,7 +24,7 @@ import me from '../assets/me.gif'
                         <h1 className={'title-byme'}>Sobre Mi</h1>
             }
                 <div className="containerDescriptionsobremi">
-                  <div  className="img-container-byme" style={{display: 'flex', height: '550px', border:'1px solid white' , padding:'20px', borderRadius:'16%'}}>
+                  <div  className="img-container-byme" style={{display: 'flex', height: '400px', border:'2px solid #ffab03' , padding:'20px', borderRadius:'50%'}}>
                   <img className={isMobile ?  'img-mobile' : 'img-desktop'}
                         src={me}
                         alt={"me from me"}

@@ -55,9 +55,9 @@ import CardsHabilidades from './CardsHabilidades';
     <>
     <section className="containerHabilidades">
         <div className="containerDescription">
-        <h1>Experiencia</h1>
-        <h2 style={{fontSize:'22px' , marginBottom:'15px', color:'#ffab03'}}>Ingeniero Electrónico | Front-end</h2>
-        <h2 style={{width:'300px'}}>Construyo aplicativos web estéticos, intuitivos y para todo público.</h2>
+        <h1 style={{fontSize:"4vw"}}>Experiencia</h1>
+        <h2 style={{fontSize:'1.5vw' , marginBottom:'15px', color:'#ffab03'}}>Ingeniero Electrónico | Front-end</h2>
+        <h2 style={{width:'300px', fontSize:"1vw"}}>Construyo aplicativos web estéticos, intuitivos y para todo público.</h2>
         </div>
     </section>
     <section className='container-exp-mobile'>

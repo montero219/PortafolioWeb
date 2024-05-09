@@ -4,8 +4,7 @@ import React, { useState } from 'react';
 // import logo from "../assets/logo.svg";
 // eslint-disable-next-line no-unused-vars
 import styles from './stylescomponent.css'
-import { FaBars } from "react-icons/fa6";
-import { IoMdDownload } from "react-icons/io";
+import { TbFileDownload } from "react-icons/tb";
 
 
 const Navbar = () => {
@@ -35,10 +34,9 @@ const Navbar = () => {
       </div>
         <div className='CV' onClick={descargarCV} >Descargar VD</div>
       </section>
-      <section className='ico-nav'>
-        <FaBars/>
-        <div className='CV' style={{height:'25px', display:'flex', gap:'5px', fontSize:'12px', width:'50px'}} onClick={descargarCV} > <IoMdDownload /> VD</div>
-      </section>
+      <div className='CV visualizar' style={{height:'25px', display:'flex', gap:'5px', fontSize:'12px', width:'50px'}} onClick={descargarCV} >
+         <TbFileDownload />
+      </div>
     </div>
   );
 }
