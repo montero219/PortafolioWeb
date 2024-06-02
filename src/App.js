@@ -7,7 +7,7 @@ import Social from "./components/Social";
 import Particulas from "./components/Particulas";
 import Habilidades from "./components/Habilidades";
 import Sobremi from "./components/SobreMi";
-import Contactme from "./components/Contactme"
+import Contactame from "./components/Contactame"
 function PortafolioWeb() {
   return (
     <section className="containerTotal">
@@ -24,9 +24,9 @@ function PortafolioWeb() {
       <section id="sobreMi">
       <Sobremi/>
       </section>
-      {/* <section id="contacme">
-      <Contactme/>
-      </section> */}
+      <section id="contactame">
+      <Contactame/>
+      </section>
     </section>
   );
 }

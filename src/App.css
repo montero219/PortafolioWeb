@@ -42,7 +42,7 @@ body{
     position: relative;
 
 }
-#experiencia , #sobreMi{
+#experiencia , #sobreMi , #contactame{
     height: 100vh;
     position: relative;
     display: flex;

@@ -19,11 +19,11 @@ import CardsHabilidades from './CardsHabilidades';
     }, []);
     let Habilidad1 = {
         Rango : 'Mar 2023 - Actualidad',
-        Empresa : 'Movisoftware | Desarrollador Front-end',
+        Empresa : 'Movisoftware | Desarrollador Full-Stack',
         Cargo : 'Ingeniero',
         Nivel : 'Mid',
-        Descripcion : 'Desarrollo front-end y back-end de aplicativos web diseñados específicamente para empresas del sector eléctrico. Enfocado en proporcionar soluciones tecnológicas para los ingenieros del sector.',
-        Habilidades : ['Javascript','Jquery', '.NET', 'React', 'CSS', 'HTML', 'MVC'] 
+        Descripcion : 'Desarrollador Full-Stack con experiencia en Front-end utilizando React, JavaScript (Vanilla) y jQuery, complementado con HTML y CSS. Competencia en la creación de interfaces de usuario dinámicas y responsivas. En el ámbito del Back-end, manejo .NET y Entity Framework para la gestión eficiente de datos y el desarrollo de servicios robustos y seguros. También tengo experiencia en SQL Express para la gestión de bases de datos. Experiencia en el control de versiones con GIT, asegurando un flujo de trabajo ordenado y colaborativo. Trabajo bajo metodologías ágiles como Scrum, optimizando la entrega continua de valor en los proyectos.',
+        Habilidades : ['Javascript (Vanilla)','Jquery', '.NET', 'React', 'CSS', 'HTML', 'MVC'] 
     }
     
     let Habilidad2 = {
@@ -31,8 +31,8 @@ import CardsHabilidades from './CardsHabilidades';
         Empresa : 'Movisoftware | Desarrollador Front-end',
         Cargo : 'Ingeniero',
         Nivel : 'Junior',
-        Descripcion: 'Desarrollo front-end de aplicativos web responsives para empresas del sector eléctrico. Mi enfoque se centra en proporcionar soluciones tecnológicas que satisfagan tanto las complejas necesidades de los ingenieros del sector como las expectativas de los usuarios finales.',
-        Habilidades : ['React','Javascript', 'CSS', 'HTML','Angular','Apps Responsives' ] 
+        Descripcion: 'Desarrollador Front-End especializado en la creación de aplicaciones web utilizando tecnologías modernas. Experiencia avanzada en React, JavaScript (Vanilla) y jQuery, complementado con HTML y CSS. Competencia en la construcción de interfaces de usuario dinámicas y responsivas empleando frameworks como Bootstrap y Material UI. Experiencia en el control de versiones con GIT, asegurando un flujo de trabajo ordenado y colaborativo. Trabajo bajo metodologías ágiles como Scrum, optimizando la entrega continua de valor en los proyectos.',
+        Habilidades : ['React','Javascript (Vanilla)', 'CSS', 'HTML','Angular','Apps Responsives' ] 
     }
     let Habilidad3 = {
         Rango : 'Junio 2022 - Oct 2022',
